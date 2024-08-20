@@ -20,7 +20,7 @@ public class EuclidGCD {
 
     static int gcdArray(int[] a) {
 
-       return a[1] == 0 ? a[0] : gcdArray(a);
+       return a[1] == 0 ? a[0] : gcd(a[1], a[0] % a[1]);
     }
 
     public static void main(String[] args) {
