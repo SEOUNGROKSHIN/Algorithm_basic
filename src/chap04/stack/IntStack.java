@@ -1,4 +1,4 @@
-package chap04;
+package chap04.stack;
 
 public class IntStack {
     private int[] stk;      // 스택용 배열

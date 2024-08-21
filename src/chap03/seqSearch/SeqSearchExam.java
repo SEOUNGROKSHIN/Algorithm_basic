@@ -1,4 +1,4 @@
-package chap03;// 연습3-2
+package chap03.seqSearch;// 연습3-2
 // 선형검색(검색 과정을 자세히 출력)
 
 import java.util.Scanner;

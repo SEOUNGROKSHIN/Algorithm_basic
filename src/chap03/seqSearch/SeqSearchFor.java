@@ -1,4 +1,4 @@
-package chap03;
+package chap03.seqSearch;
 
 import java.util.Scanner;
 

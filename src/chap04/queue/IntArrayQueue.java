@@ -1,4 +1,4 @@
-package chap04;// 연습4-4
+package chap04.queue;// 연습4-4
 // int형 고정 길이 큐(링 버퍼를 사용하지 않고 구현)
 
 public class IntArrayQueue {

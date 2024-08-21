@@ -1,4 +1,4 @@
-package chap04;
+package chap04.queue;
 
 public class IntQueue {
     private int[] que;              // 큐용 배열

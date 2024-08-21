@@ -1,4 +1,4 @@
-package chap03;
+package chap03.binarySearch;
 
 import java.util.Arrays;
 import java.util.Scanner;

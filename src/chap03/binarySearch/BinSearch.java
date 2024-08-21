@@ -1,4 +1,4 @@
-package chap03;
+package chap03.binarySearch;
 
 import java.util.Scanner;
 
@@ -23,6 +23,20 @@ public class BinSearch {
             return -1;              // 검색 실패
     }
 
+    static int binSearchFor(int[] a, int n, int key) {
+        int pl = 0;
+        int pr = n - 1;
+        int pc = (pl + pr) / 2;
+
+        if (a[pc] == key)
+            return pc;
+        else if (a[pc] < key)
+            pl = pc + 1;
+        else
+            pr = pc - 1;
+
+        return -1;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -45,7 +59,7 @@ public class BinSearch {
         System.out.println("검색할 값: ");
         int key = sc.nextInt();
 
-        int idx = binSearch(x, num, key);
+        int idx = binSearchFor(x, num, key);
 
         if (idx == -1)
             System.out.println("그 값의 요소가 없습니다.");

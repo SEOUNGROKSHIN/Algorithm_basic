@@ -1,4 +1,4 @@
-package chap04;
+package chap04.queue;
 
 public class GenericQueue<E> {
 

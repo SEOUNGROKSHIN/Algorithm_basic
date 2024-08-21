@@ -1,7 +1,5 @@
-package chap04;// 연습4-4
+package chap04.queue;// 연습4-4
 // int형 고정 길이 큐(링 버퍼를 사용하지 않고 구현)의 사용 예
-
-import chap04.IntArrayQueue;
 
 import java.util.Scanner;
 
@@ -55,6 +53,7 @@ class IntArrayQueueTester {
 				break;
 			}
 		}
+
 	}
 }
 

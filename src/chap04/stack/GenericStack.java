@@ -1,4 +1,4 @@
-package chap04;
+package chap04.stack;
 
 import java.util.EmptyStackException;
 
