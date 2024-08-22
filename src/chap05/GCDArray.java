@@ -31,13 +31,11 @@ class GCDArray {
         int num;
         do {
             num = sc.nextInt();
-
             if (num <= 1)
                 System.out.println("배열의 길이는 2부터 입력 가능합니다. ");
-
         } while (num <= 1);
 
-        int[] x = new int[num];					// 길이가 num 인 배열
+          int[] x = new int[num];					// 길이가 num 인 배열
 
         for (int i = 0; i < num; i++) {
             System.out.print("x[" + i + "] : ");

@@ -29,7 +29,7 @@ public class GenericQueue<E> {
             }
         }
     // 큐에 데이터를 인큐
-    public E enque(Object obj) throws IntQueue.OverflowIntQueueException {
+    public E enque(Object obj) throws RingbufferIntQueue.OverflowIntQueueException {
         if (num >= capacity)
             throw new GenericQueue.OverflowGQueException();  // 큐가 가득 참
         que[rear++] = (E) obj;
@@ -40,7 +40,7 @@ public class GenericQueue<E> {
     }
 
     // 큐에 데이터를 디큐
-    public E deque() throws IntQueue.EmptyIntQueueException {
+    public E deque() throws RingbufferIntQueue.EmptyIntQueueException {
         if (num <= 0)
             throw new GenericQueue.EmptyGQueException();
         E obj = que[front++];
@@ -51,7 +51,7 @@ public class GenericQueue<E> {
     }
 
     // 큐에서 데이터를 피크(프런트 데이터를 들여다봄)
-    public E peek() throws IntQueue.EmptyIntQueueException {
+    public E peek() throws RingbufferIntQueue.EmptyIntQueueException {
         if (num <= 0)
             throw new GenericQueue.EmptyGQueException();
         return que[front];
@@ -101,7 +101,7 @@ public class GenericQueue<E> {
         }
     }
 
-    public int search(Object x) throws IntQueue.EmptyIntQueueException {
+    public int search(Object x) throws RingbufferIntQueue.EmptyIntQueueException {
         for (int i = 0; i < num; i++) {
             if (que[(i + front) % capacity]  == x)
                 return i + i;

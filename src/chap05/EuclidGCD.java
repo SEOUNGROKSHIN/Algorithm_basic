@@ -8,7 +8,7 @@ public class EuclidGCD {
     // 정수 x, y의 최대 공약수를 구하여 반환
     static int gcd(int x, int y) {
         if (y == 0)
-            return x;
+            return x;   // x => 최대 공약수
         else
             return gcd(y, x % y);
     }
