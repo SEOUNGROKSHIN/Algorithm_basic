@@ -23,8 +23,8 @@ public class Hanoi {
         System.out.println("하노이의 탑");
         System.out.print("원반의 개수: ");
         int n = sc.nextInt();
-//        move(n, 1, 3);
-        moveString(n, 1, 3); // 1번 기둥에 쌓인 n개의 원반을 3번 기둥으로 옮김
+        move(n, 1, 3);
+//        moveString(n, 1, 3); // 1번 기둥에 쌓인 n개의 원반을 3번 기둥으로 옮김
     }
 
     private static void moveString(int no, int x, int y) {

@@ -16,7 +16,6 @@ public class EuclidGCDEx {
 
             System.out.println("최대 공약수는 " + gcd(x, y) + "입니다.");
         }
-
        public static int gcd(int x, int y) {
             while (y != 0) {
                 int temp = y;
