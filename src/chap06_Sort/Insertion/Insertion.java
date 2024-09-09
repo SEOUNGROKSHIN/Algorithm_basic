@@ -10,10 +10,14 @@ public class Insertion {
                 int j;
                 int temp = arr[i];
                 for (j = i; j > 0 && arr[j - 1] > temp; j--)
-                    arr[j] = arr[j - 1];
-                arr[j] = arr[j - 1];
-                arr[j] = temp;
+                    swap(arr, j, j - 1);
             }
+        }
+
+        static void swap(int[] arr, int idx1, int idx2) {
+            int temp = arr[idx1];
+            arr[idx1] = arr[idx2];
+            arr[idx2] = temp;
         }
 
         public static void main(String[] args) {
