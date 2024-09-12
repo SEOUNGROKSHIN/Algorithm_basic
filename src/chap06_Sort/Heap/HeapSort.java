@@ -7,7 +7,9 @@ public class HeapSort {
 
     // 배열 요소 a[idx1]과  a[idx2]의 값을 교환
     static void swap(int[] a, int idx1, int idx2) {
-        int t = a[idx1]; a[idx1] = a[idx2]; a[idx2] = t;
+        int t = a[idx1];
+        a[idx1] = a[idx2];
+        a[idx2] = t;
     }
 
     // a[left ~ a[right]를 힙으로 만듦

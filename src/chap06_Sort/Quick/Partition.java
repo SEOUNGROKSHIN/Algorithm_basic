@@ -16,6 +16,7 @@ public class Partition {
         int pr = n - 1;     // 오른쪽 커서
         int x = arr[n / 2]; // 피벗(가운데 요소)
 
+    // 피벗 x를 기준으로 배열 a를 나눔
         do {
             while(arr[pl] < x) pl++;
             while(arr[pr] > x) pr--;

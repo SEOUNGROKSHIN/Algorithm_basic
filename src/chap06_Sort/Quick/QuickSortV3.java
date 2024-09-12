@@ -1,7 +1,7 @@
 package chap06_Sort.Quick;
 
 import java.util.Scanner;
-
+// 퀵정렬(개선한 버전)
 public class QuickSortV3 {
 
     // 배열 요소a[idx1]과 a[idx2]의 값을 교환

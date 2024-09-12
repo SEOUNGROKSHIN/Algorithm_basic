@@ -51,6 +51,7 @@ public class QuickSort {
     }
 
     // 퀵 정렬(비재귀 버전)
+    // StackVer
     static void quickSortXRecur(int[] a, int left, int right) {
         IntStack lstack = new IntStack(right - left + 1);           // 나눌 범위의 왼쪽 끝(맨 앞) 요소의 인덱스를 저장하는 스택
         IntStack rstack = new IntStack(right - left + 1);           // 나눌 범위의 오른쪽 끝(맨 뒤) 요소의 인데긋를 저장하는 스택
