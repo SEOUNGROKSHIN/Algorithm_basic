@@ -1,13 +1,22 @@
+class Solution {
+    public String solution(int q, int r, String code) {
+        StringBuilder answer = new StringBuilder();
 
+        for (int i = 0; i < code.length(); i++) {
+            if (i % q == r) {
+                answer.append(code.charAt(i));
+            }
+        }
+
+        return answer.toString();
+    }
+}
+
+// 반드시 클래스 안에 main 메서드가 있어야 함!
 public class Main {
-
     public static void main(String[] args) {
-        int answer = 0;
-        int n = 7;
-
-        for(int i = n; i >= 0; i -= 2)
-            answer += (n % 2 == 0) ? i * i : i;
-
-        System.out.println(answer);
+        Solution sol = new Solution();
+        String result = sol.solution(3, 1, "qjnwezgrpirldywt");
+        System.out.println(result);
     }
 }
