@@ -1,4 +1,4 @@
-package FastCampus_Java.String.문서검색;
+package FastCampus_Java.String.Search_document;
 
 import java.util.Scanner;
 

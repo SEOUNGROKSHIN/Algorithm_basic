@@ -1,4 +1,4 @@
-package FastCampus_Java.String.대소문자;
+package FastCampus_Java.String.Upper_Lower;
 
 import java.util.Scanner;
 

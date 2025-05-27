@@ -1,4 +1,4 @@
-package FastCampus_Java.String.단어공부;
+package FastCampus_Java.String.Vocabulary_study;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package FastCampus_Java.String.소금폭탄;
+package FastCampus_Java.String.SaltBomb;
 
 import java.util.Scanner;
 

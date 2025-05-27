@@ -1,4 +1,4 @@
-package FastCampus_Java.String.에너그램;
+package FastCampus_Java.String.Enneagram;
 
 import java.util.Scanner;
 
